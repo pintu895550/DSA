@@ -5,9 +5,9 @@ int main()
     int top,n,arr[5],m;
 
    
-    for(top=0;top<5;top++)
+    for(top=0;top<=5;top++)
     {
-        if(top==5-1)
+        if(top==5)
         {
             printf("stack is full\n");
         }
