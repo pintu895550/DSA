@@ -1,30 +1,32 @@
 #include<stdio.h>
-
 int main()
 {
-    int top,n,arr[5],m;
-
-   
+    int top,x,i;
+    int arr[5];
     for(top=0;top<=5;top++)
     {
         if(top==5)
         {
-            printf("stack is full\n");
+            printf("Stack is full\n");
         }
         else
         {
-            printf("enter  an element: ");
-            scanf("%d",&m);
-            arr[top]=m;
-
+            printf("Enter the element: ");
+            scanf("%d",&x);
+            arr[top]=x;
         }
-        
+    }
+    for(top=4; top>=-1; top--)
+    {
+        if(top==-1)
+        {
+            printf("stack is empty\n");
+        }
+        else
+        {
+            printf("Element is %d\n",arr[top]);
+        }
     }
 
-    printf("Present elements are: ");
-    for(top=0;top<5;top++)
-        {
-            printf(" %d\t",arr[top]);
-        }
     return 0;
 }
